@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerar cadastro</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      text-decoration: none;
+    }
+
+    body {
+       background-image: linear-gradient(to right, #920924,#D90924) ;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       
+    }
+
+    main {
+     flex-direction: column;
+      margin-left: 4em ;
+      margin-right: 4em;
+      width: 550px;
+      height: 450px;
+      background-color:#B70924 ;
+      margin-top: 8em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    
+
+    .gerar {
+      border-radius: 10px;
+      background-color: black;
+      width: 200px;
+      height: 50px;
+    }
+    .logar {
+      border-radius: 10px;
+      background-color: black;
+      width: 200px;
+      height: 50px;
+    }
+
+    .criar {
+      border-radius: 10px;
+      background-color: black;
+      width: 200px;
+      height: 50px;
+    }
+
+    div {
+      margin: 7px;
+    }
+
+     p {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      position: relative;
+      top: 15px;
+      color: azure;
+      text-align: center;
+    }
+
+#res {
+  width: 200px;
+  height: 60px;
+  
+}
+
+
+.criar > div {
+  display: none;
+}
+
+.criar:hover > div {
+  display: block;
+}
+
+#mostrar {
+  background-color: rgba(255, 255, 255, 0.26);
+  width: 170px;
+  height: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  margin-top: 1.5em;
+  position: relative;
+  left: 10px;
+  color: #920924;
+  transition-duration: 7s;
+}
+
+  </style>
+
+  
+</head>
+<body>
+  <main>
+  <a href="#"><div class="gerar" onclick="clicar()">
+    <p>Gerar login</p>
+        </div></a>
+
+          <div id="res" >
+.
+          </div>
+    
+    <a href="teladologin.html"><div class="logar">
+      <p>Logar</p>
+          </div>
+        </a>
+
+    <a href="#"><div class="criar">
+      <p>Registrar</p>
+      <div id="mostrar">Essa funçao nao esta dispoivel. <br> Escolha uma das opçoes acima.</div>
+          </div></a>
+  </main>
+
+  <script>
+    var res = document.getElementById('res')
+    function clicar() {
+   res.innerHTML = 'Seu usuario é: back123779 <br> Sua senha é: 34626563'
+    }
+    
+    
+  </script>
+</body>
+</html>
